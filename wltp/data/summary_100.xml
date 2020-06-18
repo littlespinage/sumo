@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Mo 15 Jun 2020 09:55:05 CEST by Eclipse SUMO GUI Version 1.1.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="data/hello.net.xml"/>
+        <route-files value="data/hello.rou.xml"/>
+    </input>
+
+    <output>
+        <battery-output value="data/Battery.out.xml"/>
+        <battery-output.precision value="4"/>
+        <summary-output value="data/summary_100.xml"/>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+    </time>
+
+    <battery>
+        <device.battery.probability value="1"/>
+    </battery>
+
+    <traci_server>
+        <remote-port value="56137"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="data/hello.settings.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/summary_file.xsd">
+    <step time="0.00" loaded="1" inserted="0" running="0" waiting="0" ended="0" meanWaitingTime="-1.00" meanTravelTime="-1.00" halting="0" meanSpeed="-1.00" meanSpeedRelative="-1.00" duration="1592207710943"/>
+    <step time="1.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711074"/>
+    <step time="2.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711224"/>
+    <step time="3.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711374"/>
+    <step time="4.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711524"/>
+    <step time="5.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711674"/>
+    <step time="6.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711824"/>
+    <step time="7.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207711973"/>
+    <step time="8.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207712123"/>
+    <step time="9.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207712274"/>
+    <step time="10.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="1" meanSpeed="0.00" meanSpeedRelative="0.00" duration="1592207712425"/>
+    <step time="11.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207712575"/>
+    <step time="12.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207712725"/>
+    <step time="13.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207712875"/>
+    <step time="14.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713025"/>
+    <step time="15.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713175"/>
+    <step time="16.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713324"/>
+    <step time="17.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713474"/>
+    <step time="18.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713624"/>
+    <step time="19.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713774"/>
+    <step time="20.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="1.00" meanSpeedRelative="0.07" duration="1592207713925"/>
+    <step time="21.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="2.00" meanSpeedRelative="0.14" duration="1592207714076"/>
+    <step time="22.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="3.00" meanSpeedRelative="0.22" duration="1592207714226"/>
+    <step time="23.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="4.00" meanSpeedRelative="0.29" duration="1592207714376"/>
+    <step time="24.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="5.00" meanSpeedRelative="0.36" duration="1592207714526"/>
+    <step time="25.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="6.00" meanSpeedRelative="0.43" duration="1592207714676"/>
+    <step time="26.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="6.00" meanSpeedRelative="0.43" duration="1592207714826"/>
+    <step time="27.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="6.00" meanSpeedRelative="0.43" duration="1592207714975"/>
+    <step time="28.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="6.00" meanSpeedRelative="0.43" duration="1592207715125"/>
+    <step time="29.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="6.00" meanSpeedRelative="0.43" duration="1592207715275"/>
+    <step time="30.00" loaded="1" inserted="1" running="1" waiting="0" ended="0" meanWaitingTime="0.00" meanTravelTime="-1.00" halting="0" meanSpeed="6.00" meanSpeedRelative="0.43" duration="1592207715426"/>
+</summary>

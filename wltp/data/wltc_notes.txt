@@ -1,0 +1,19 @@
+maximum power--80kW
+maximum torque--280Nm
+maximum battery capacity--24kWh
+temperature--25C, without ventilation and air-conditioning system
+empty mass--1520kg. laboratory test: curb weight + driver = 1595kg
+gravity acceleration--9.81
+road friction coefficient--0.0127
+air density--1.18
+vehicle drag coefficient--0.28
+vehicle frontal area--2.27
+road slope angle--variable 
+propulsion efficiency--from battery to wheel: average value of three efficiency: (0.751+0.768+0.799+0.688+0.69+0.735)/6 = 0.7385
+recuperation efficiency--from wheel to battery: (0.37+0.308+0.348+0.414+0.263+0.347)/6 = 0.3417
+    
+SUMO1.0
+WLTC one cycle energy consumed = 4379.5
+
+my model
+
