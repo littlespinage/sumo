@@ -1,0 +1,42 @@
+SUMO1.1
+1. default values
+    mass = 1000kg
+    front surface area = 2
+    air drag coefficient = 0.4
+    internal moment of inertia = 10
+    radial drag coefficient = 1
+    roll drag coefficient = 0.5 
+    constant power intake = 10
+    propulsion efficiency = 0.5
+    recuperation efficiency = 0
+    angle = 0
+
+2. calculation method
+    lastV = v - a
+    energyDiff = mass * 9.81 * sin(slope) * dist   //potential energy
+    energyDiff += 0.5 * mass * (v * v - lastV * lastV)   //kinetic energy 
+    energyDiff += internalmomentofinertia * (v * v - lastV * lastV)   //rotational energy 
+    energyDiff += 0.5 * 1.2041 * frontsurfacearea * airdragcoefficient * v * v * dist   //air resistance 
+    energyDiff += rolldragcoefficient * 9.81 * cos(slope) * mass * dist   //roll resistance 
+    enregyDiff += radialdragcoefficient * mass * v * v / radius  //radial force 
+    energyDiff += constantpowerintake  // conatant power consuption 
+    if energyDiff > 0: energyDiff = energyDiff / propulsionefficiency   //energyconsumption
+    else: energyDiff = energyDiff * recuperationefficiency    //recuperation
+    return energyDiff / 3600
+
+My method 
+1. calculation method 
+    lastV = v - ACCEL2SPEED(a)
+    tractionForce = mass * a   //acceleration force 
+    tractionForce += 0.5 * 1.2041 * frontsurfacearea * airdragcoefficient * v * v   //wind drag force 
+    tractionForce += rolldragcoefficient * 9.81 * cos(slope) * mass   //roll drag coefficient
+    tractionForce += mass * 9.81 * sin(slope)    //climbing force
+    if tractionForce > 0: double energyDiff = tractionForce * SPEED2DIST(v) / mottorefficiency   //propulsion
+    else: double energyDiff = tractionForce * SPEED2DIST(v) / exp(0.0411 /abs(a)    //recuperation
+    return energyDIff / 3600
+
+2. mottor efficiency
+    MotorToruqe = tractionForce * wheelRadius / gear ratio = 9
+    MotorSpeed = v / (2 * 3.1415926 * radius) * gear ratio
+    MotorTorque = MotorTorque * 210 / maximumTorque
+    MotorSpeed = MotorSpeed * 60 * maxSpeed / 12000

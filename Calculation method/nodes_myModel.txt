@@ -1,0 +1,54 @@
+lastV = v - ACCEL2SPEED(a) 
+ACCEL2SPEED(a) = a * timestep
+
+1. acceleration force at wheels 
+
+tractionforce += mass * a * e + massOfLoads * a= 1.2425 * m * a + massOfLoads * a
+
+for acceleration, some energy is converted to wheels' ratational kinetic energy
+1.1 determination of mass factor e
+e = 1 + e1 + e2
+e1 = 0.04
+e2 = 0.0025*i^2   --i is gear ratio, here we use i = 9
+e = 1,2425
+source: Lecture 3: Motion and dynamic equations for vehicles. p27
+
+2. wind drag force
+
+tractionforce += 0.5 * 1.2041 * frontalSurface * airDragCoefficient * v * v
+
+2.1 frontal surface
+A = 1.6 * 0.00056 * (mass - 765) 
+source: A new empirical formula for calculating vehicle's frontal area. p2
+
+2.2 air drag coefficient 
+airDragCoefficient = 0.28
+source: Experimental Test Campaign on a Battery Electric Vehicle: Laboratory Test Results. P102
+
+3. roll drag force
+
+tractionforce += rollDragCoefficient * 9.81 * cos(slope) * (mass + massOfPassenger)
+
+3.1 roll drag coefficient 
+rollDragCoefficient = 0.0127
+source: Experimental Test Campaign on a Battery Electric Vehicle: Laboratory Test Results. P102
+
+4. gravity 
+tractionforce = (mass + massOfLoads) * 9.81 * sin(slope)
+
+5. motor efficiency
+MotorTorque = tractionforce * wheelRadius / 9
+
+
+5.1 gear ratio is 9(emprical mean value)
+5.2 wheel radius = 640/2 = 320 mm = 0.32m
+Nissan Leaf 2011. Tire sizes = 195/65 R15 – 225/35 R19(635mm-640)
+
+6. gear efficiency: we can assume it is a constant value
+(0.846+0.854+0.869+0.753+0.76+0.8)=0.814
+
+7. when recuperating, some energy was consumed by hydraulic braking.
+
+
+
+

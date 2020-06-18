@@ -1,0 +1,26 @@
+lastV = v - ACCEL2SPEED(a)  --ACCEL2SPEED(x) = ((x)*TS); TS = deltaT/1000 Ts is in ms
+
+1. potential energy
+    mass * 9.81 * sin(slope) * SPEED2DIST(v)
+2. kinetic energy 
+    0.5 * mass * (v * v - lastV * lastV)
+3. rotational energy
+    internalMomentOfInertia * (v * v - lastV * lastV)
+4. air drag energy 
+    0.5 * 1.2041 * frontalarea * airdragcoefficient * v * v * SPEED2DIST(v)
+5. roll drag energy 
+    rollDragCoefficient * 9.81 * mass * SPEED2DIST(v)
+6. radial energy 
+    radialDragCoefficient * mass * v * v / radius
+7. constant power, auxiliary 
+    constantPowerIntake 
+if energyDiff > 0: energyDiff = energyDiff / propulsionefficiency
+else : energyDiff = energyDiff * recuperationefficiency 
+
+
+
+return energyDiff / 3600 (Wh)
+
+0.0056 = 10 / 0.5 /3600
+2.7308 = (0.5*1.2041*2*0.4 + 0.5*9.81*1000 + 10)/0.5/3600
+26.3300 = (0.5*1000*(6*6-1*1) + 10*(6*6-1) + 0.5*1.2041*2*0.4*6*6*6 + 0.5*9.81*1000*6 + 10)/0.5/3600
