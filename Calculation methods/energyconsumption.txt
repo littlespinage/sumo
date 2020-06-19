@@ -32,7 +32,7 @@ My method
     tractionForce += rolldragcoefficient * 9.81 * cos(slope) * mass   //roll drag coefficient
     tractionForce += mass * 9.81 * sin(slope)    //climbing force
     if tractionForce > 0: double energyDiff = tractionForce * SPEED2DIST(v) / mottorefficiency   //propulsion
-    else: double energyDiff = tractionForce * SPEED2DIST(v) / exp(0.0411 /abs(a)    //recuperation
+    else: double energyDiff = tractionForce * SPEED2DIST(v) * abs(a)    //recuperation
     return energyDIff / 3600
 
 2. mottor efficiency

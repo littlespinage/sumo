@@ -17,10 +17,6 @@ lastV = v - ACCEL2SPEED(a)  --ACCEL2SPEED(x) = ((x)*TS); TS = deltaT/1000 Ts is 
 if energyDiff > 0: energyDiff = energyDiff / propulsionefficiency
 else : energyDiff = energyDiff * recuperationefficiency 
 
-
-
 return energyDiff / 3600 (Wh)
 
-0.0056 = 10 / 0.5 /3600
-2.7308 = (0.5*1.2041*2*0.4 + 0.5*9.81*1000 + 10)/0.5/3600
-26.3300 = (0.5*1000*(6*6-1*1) + 10*(6*6-1) + 0.5*1.2041*2*0.4*6*6*6 + 0.5*9.81*1000*6 + 10)/0.5/3600
+

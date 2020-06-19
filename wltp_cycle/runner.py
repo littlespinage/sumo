@@ -31,7 +31,7 @@ import traci  # noqa
 
 def run():
     step = 0
-    for x in open("data.txt", "r"):
+    for x in open("wltc3b_speed.txt", "r"):
         traci.simulationStep()
         traci.vehicle.setSpeed("veh0", float(x))
         step = step + 1
